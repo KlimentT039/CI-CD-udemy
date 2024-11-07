@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
         startActivity(Intent(this@LoginActivity, ProfileActivity::class.java))
       }
     }else{
-
+      Log.d("Proverka", "Hello ")
     }
   }
 
