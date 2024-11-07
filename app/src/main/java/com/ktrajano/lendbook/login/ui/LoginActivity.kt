@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
   private fun handleButtonsAndObservers(){
     viewModel.authEvents.observe(this,authEvent)
     binding.signButton.setOnClickListener {
-      Log.d("Proverka", binding.passwordLogin.text.toString())
+      Log.d("Proverka23", binding.passwordLogin.text.toString())
       viewModel.login(
         binding.mailLogin.text.toString(),
         binding.passwordLogin.text.toString()
