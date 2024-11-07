@@ -8,19 +8,21 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import com.ktrajano.lendbook.databinding.ActivityLoginBinding
 import com.ktrajano.lendbook.profile.ui.ProfileActivity
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.crashes.Crashes
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginActivity : AppCompatActivity() {
 
-  private lateinit var binding : ActivityLoginBinding
-  private val viewModel  by viewModel<AuthenticationViewModel>()
+  private lateinit var binding: ActivityLoginBinding
+  private val viewModel by viewModel<AuthenticationViewModel>()
 
-  private val authEvent : Observer<AuthenticationEvents> = Observer<AuthenticationEvents> {
-    if(it!=null && it!=AuthenticationEvents.UserNotAuthenticated){
+  private val authEvent: Observer<AuthenticationEvents> = Observer<AuthenticationEvents> {
+    if (it != null && it != AuthenticationEvents.UserNotAuthenticated) {
       lifecycleScope.launchWhenStarted {
         startActivity(Intent(this@LoginActivity, ProfileActivity::class.java))
       }
-    }else{
+    } else {
       Log.d("Proverka", "Hello ")
     }
   }
@@ -31,11 +33,10 @@ class LoginActivity : AppCompatActivity() {
     binding = ActivityLoginBinding.inflate(layoutInflater)
     handleButtonsAndObservers()
     setContentView(binding.root)
-    throw Exception("Something went wrong")
   }
 
-  private fun handleButtonsAndObservers(){
-    viewModel.authEvents.observe(this,authEvent)
+  private fun handleButtonsAndObservers() {
+    viewModel.authEvents.observe(this, authEvent)
     binding.signButton.setOnClickListener {
       Log.d("Proverka23", binding.passwordLogin.text.toString())
       viewModel.login(
@@ -45,12 +46,12 @@ class LoginActivity : AppCompatActivity() {
     }
     viewModel.checkIfUserIsAuthenticatedInFirebase()
     binding.registerText.setOnClickListener {
-      startActivity(Intent(this,RegisterActivity::class.java))
+      startActivity(Intent(this, RegisterActivity::class.java))
     }
   }
 
 
-  private fun validationOfFields(){
+  private fun validationOfFields() {
     //TODO
   }
 
