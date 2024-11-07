@@ -19,7 +19,7 @@ android {
   defaultConfig {
     applicationId "com.ktrajano.lendbook"
     minSdk 30
-    targetSdk 32
+    targetSdk 33
     versionCode 1
     versionName "1.0"
 
@@ -108,5 +108,9 @@ dependencies {
 
   //HTTP logging interceptor
   implementation "com.squareup.okhttp3:logging-interceptor:4.10.0"
+
+  def appCenterSdkVersion = '5.0.4'
+  implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+  implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 
 }

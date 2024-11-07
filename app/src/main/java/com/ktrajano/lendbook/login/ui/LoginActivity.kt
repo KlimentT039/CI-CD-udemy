@@ -10,8 +10,6 @@ import com.ktrajano.lendbook.databinding.ActivityLoginBinding
 import com.ktrajano.lendbook.profile.ui.ProfileActivity
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
-
 class LoginActivity : AppCompatActivity() {
 
   private lateinit var binding : ActivityLoginBinding
