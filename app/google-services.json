@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1029919461447",
+    "project_id": "lendbook---ii",
+    "storage_bucket": "lendbook---ii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029919461447:android:c04b460b5cfe3d7a14a162",
+        "android_client_info": {
+          "package_name": "com.ktrajano.lendbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029919461447-3494ne2pc5g6svrb0nktj9s888uvdriu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ktrajano.lendbook",
+            "certificate_hash": "38d7d69ca4c76d36b24dcb867d55a9a1127eba2c"
+          }
+        },
+        {
+          "client_id": "1029919461447-uemmc5rfvj6f064f5jkvs3g26mkaqumr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtkSLvymv2axU4yXdXKqxJQwU-VC7lETA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029919461447-uemmc5rfvj6f064f5jkvs3g26mkaqumr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

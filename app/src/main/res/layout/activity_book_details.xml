@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black"
+  tools:context=".books.ui.BookDetailsActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <!-- Book Title -->
+      <TextView
+        android:id="@+id/book_title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Book Title" />
+
+      <!-- Book Author -->
+      <TextView
+        android:id="@+id/book_author"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="Author Name" />
+
+      <!-- Book Cover Image -->
+      <ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:src = ""/>
+
+      <!-- Book Description -->
+      <TextView
+        android:id="@+id/book_description"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Book Description" />
+
+      <!-- Book Details Table -->
+      <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:stretchColumns="0,1">
+
+        <!-- Book Page Count -->
+        <TableRow>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Page Count:" />
+          <TextView
+            android:id="@+id/book_page_count"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Page Count" />
+        </TableRow>
+
+      </TableLayout>
+
+      <!-- Book Rating -->
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:text="@string/add_to_the_bookshelf"
+        android:textColor="@color/white" />
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:text="@string/cancel"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  </ScrollView>

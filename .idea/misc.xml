@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_add_.xml" value="0.1815" />
+        <entry key="app/src/main/res/drawable/ic_avatar.xml" value="0.2035" />
+        <entry key="app/src/main/res/drawable/ic_book_login.xml" value="0.192" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1815" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.192" />
+        <entry key="app/src/main/res/drawable/ic_no_results.xml" value="0.2905" />
+        <entry key="app/src/main/res/drawable/ic_profile.xml" value="0.1815" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1815" />
+        <entry key="app/src/main/res/drawable/ic_user_icon.xml" value="0.1815" />
+        <entry key="app/src/main/res/drawable/round_buttons.xml" value="0.192" />
+        <entry key="app/src/main/res/drawable/search_background.xml" value="0.186" />
+        <entry key="app/src/main/res/layout/activity_add_book.xml" value="0.3183876811594203" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.31567028985507245" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.3183876811594203" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.32207794189453126" />
+        <entry key="app/src/main/res/layout/book_search_results.xml" value="0.3183876811594203" />
+        <entry key="app/src/main/res/layout/dashboard_tabs.xml" value="0.3183876811594203" />
+        <entry key="app/src/main/res/layout/no_books_found_layout.xml" value="0.5197916666666667" />
+        <entry key="app/src/main/res/layout/no_books_layout.xml" value="0.3183876811594203" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

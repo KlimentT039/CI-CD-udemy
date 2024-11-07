@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ktrajano.lendbook"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <application
+    android:name=".LendBookApp"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.LendBook"
+    android:usesCleartextTraffic="true">
+    <activity
+      android:name=".BookDetailsActivity"
+      android:exported="false">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:name=".books.ui.AddBookActivity"
+      android:exported="false" />
+    <activity
+      android:name=".profile.ui.ProfileActivity"
+      android:exported="false"
+      android:theme="@style/Theme.LendBook" />
+    <activity
+      android:name=".login.ui.RegisterActivity"
+      android:exported="false"
+      android:theme="@style/Theme.LendBook" />
+    <activity
+      android:name=".LendBookApp"
+      android:exported="false"
+      tools:ignore="Instantiatable" />
+    <activity
+      android:name=".login.ui.LoginActivity"
+      android:exported="true"
+      android:theme="@style/Theme.LendBook">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+
+  <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
