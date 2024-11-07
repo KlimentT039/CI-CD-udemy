@@ -31,6 +31,7 @@ class LoginActivity : AppCompatActivity() {
     binding = ActivityLoginBinding.inflate(layoutInflater)
     handleButtonsAndObservers()
     setContentView(binding.root)
+    throw Exception("Something went wrong")
   }
 
   private fun handleButtonsAndObservers(){
