@@ -36,5 +36,5 @@ data class Book(
 @Parcelize
 data class Thumbnail(
   @JsonProperty("thumbnail")
-  val thumbnail: String? = ""
+  val thumbnail: String? = "thumbnail"
 ) : Parcelable
